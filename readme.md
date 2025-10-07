@@ -1,6 +1,6 @@
 # IR3 Assets: assembling machines
 
-Rekins the assembling machines to use IR3 graphical assets, if installed.
+Reskins the assembling machines to use IR3 graphical assets, if installed.
 
 *Requires the manual installation of the Industrial Revolution 3 Asset Packs!*
 

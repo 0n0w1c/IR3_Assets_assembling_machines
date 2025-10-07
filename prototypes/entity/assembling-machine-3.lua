@@ -52,30 +52,10 @@ data:extend({
         fast_replaceable_group = "assembling-machine",
         graphics_set = {
             default_recipe_tint = {
-                primary = {
-                    a = 1,
-                    b = 0,
-                    g = 0,
-                    r = 1
-                },
-                quaternary = {
-                    a = 1,
-                    b = 0.5,
-                    g = 0.5,
-                    r = 1
-                },
-                secondary = {
-                    a = 1,
-                    b = 0,
-                    g = 0,
-                    r = 1
-                },
-                tertiary = {
-                    a = 1,
-                    b = 0,
-                    g = 0,
-                    r = 0.75
-                }
+                primary = { r = 1, g = 0, b = 0, a = 1 },
+                secondary = { r = 1, g = 0, b = 0, a = 1 },
+                tertiary = { r = 0.75, g = 0, b = 0, a = 1 },
+                quaternary = { r = 1, g = 0.5, b = 0.5, a = 1 }
             },
             status_colors = {
                 disabled = { a = 1, b = 0.25, g = 0.25, r = 1 },
@@ -91,47 +71,47 @@ data:extend({
                 layers = {
                     {
                         animation_speed = 0.75,
-                        draw_as_glow = false,
-                        draw_as_light = false,
-                        draw_as_shadow = false,
                         filename =
                         "__IndustrialRevolution3Assets1__/graphics/entities/machines/assemblers/assembler4-base.png",
                         frame_count = 60,
-                        height = 256,
                         line_length = 10,
+                        height = 256,
+                        width = 192,
                         priority = "high",
                         scale = 0.5,
                         shift = { 0, -0.59375 },
-                        width = 192
+                        draw_as_glow = false,
+                        draw_as_light = false,
+                        draw_as_shadow = false,
                     },
                     {
                         animation_speed = 0.75,
-                        draw_as_glow = false,
-                        draw_as_light = false,
-                        draw_as_shadow = true,
                         filename =
                         "__IndustrialRevolution3Assets1__/graphics/entities/machines/assemblers/iron-shadow.png",
                         height = 192,
+                        width = 256,
                         priority = "high",
                         repeat_count = 60,
                         scale = 0.5,
                         shift = { 0.5, -0.09375 },
-                        width = 256
-                    },
-                    {
-                        animation_speed = 0.75,
                         draw_as_glow = false,
                         draw_as_light = false,
                         draw_as_shadow = true,
+                    },
+                    {
+                        animation_speed = 0.75,
                         filename =
                         "__IndustrialRevolution3Assets1__/graphics/entities/machines/assemblers/assembler4-shadow.png",
                         frame_count = 60,
-                        height = 96,
                         line_length = 10,
+                        height = 96,
+                        width = 96,
                         priority = "high",
                         scale = 0.5,
                         shift = { 2.75, 0.15625 },
-                        width = 96
+                        draw_as_glow = false,
+                        draw_as_light = false,
+                        draw_as_shadow = true,
                     }
                 }
             },
@@ -140,54 +120,45 @@ data:extend({
                     always_draw = true,
                     animation = {
                         animation_speed = 1,
-                        draw_as_glow = false,
-                        draw_as_light = false,
-                        draw_as_shadow = false,
                         filename =
                         "__IndustrialRevolution3Assets1__/graphics/entities/machines/assemblers/steel-indicator-3-gear.png",
                         frame_count = 30,
-                        height = 64,
                         line_length = 5,
+                        height = 64,
+                        width = 64,
                         priority = "high",
                         scale = 0.5,
-                        shift = {
-                            0,
-                            0.90625
-                        },
-                        width = 64,
+                        shift = { 0, 0.90625 },
                         x = 0,
-                        y = 0
+                        y = 0,
+                        draw_as_glow = false,
+                        draw_as_light = false,
+                        draw_as_shadow = false,
                     }
                 },
                 {
                     always_draw = true,
                     animation = {
                         blend_mode = "additive",
-                        draw_as_glow = true,
-                        draw_as_light = false,
-                        draw_as_shadow = false,
                         filename =
                         "__IndustrialRevolution3Assets1__/graphics/entities/machines/assemblers/assembler-glow.png",
                         frame_count = 30,
-                        height = 128,
                         line_length = 5,
+                        height = 128,
+                        width = 192,
                         priority = "high",
                         scale = 0.5,
-                        shift = {
-                            0,
-                            -0.09375
-                        },
-                        width = 192,
+                        shift = { 0, -0.09375 },
                         x = 0,
-                        y = 0
+                        y = 0,
+                        draw_as_glow = true,
+                        draw_as_light = false,
+                        draw_as_shadow = false,
                     },
                     apply_tint = "status",
                     light = {
                         intensity = 0.4,
-                        shift = {
-                            0,
-                            0.65625
-                        },
+                        shift = { 0, 0.65625 },
                         size = 3
                     }
                 },
@@ -195,23 +166,20 @@ data:extend({
                     animation = {
                         animation_speed = 0.75,
                         blend_mode = "additive-soft",
-                        draw_as_glow = true,
-                        draw_as_light = false,
-                        draw_as_shadow = false,
                         filename =
                         "__IndustrialRevolution3Assets1__/graphics/entities/machines/assemblers/assembler4-working-sparks.png",
                         frame_count = 60,
-                        height = 192,
                         line_length = 10,
+                        height = 192,
+                        width = 192,
                         priority = "high",
                         scale = 0.5,
-                        shift = {
-                            0,
-                            -1.09375
-                        },
-                        width = 192,
+                        shift = { 0, -1.09375 },
                         x = 0,
-                        y = 0
+                        y = 0,
+                        draw_as_glow = true,
+                        draw_as_light = false,
+                        draw_as_shadow = false,
                     },
                     fadeout = true
                 },
@@ -219,23 +187,20 @@ data:extend({
                     animation = {
                         animation_speed = 0.75,
                         blend_mode = "additive-soft",
-                        draw_as_glow = true,
-                        draw_as_light = false,
-                        draw_as_shadow = false,
                         filename =
                         "__IndustrialRevolution3Assets1__/graphics/entities/machines/assemblers/assembler4-working-tinted.png",
                         frame_count = 60,
-                        height = 192,
                         line_length = 10,
+                        height = 192,
+                        width = 192,
                         priority = "high",
                         scale = 0.5,
-                        shift = {
-                            0,
-                            -1.09375
-                        },
-                        width = 192,
+                        shift = { 0, -1.09375 },
                         x = 0,
-                        y = 0
+                        y = 0,
+                        draw_as_glow = true,
+                        draw_as_light = false,
+                        draw_as_shadow = false,
                     },
                     apply_recipe_tint = "secondary",
                     fadeout = true
@@ -244,23 +209,20 @@ data:extend({
                     animation = {
                         animation_speed = 0.75,
                         blend_mode = "additive-soft",
-                        draw_as_glow = true,
-                        draw_as_light = false,
-                        draw_as_shadow = false,
                         filename =
                         "__IndustrialRevolution3Assets1__/graphics/entities/machines/assemblers/assembler4-working-white.png",
                         frame_count = 60,
-                        height = 192,
                         line_length = 10,
+                        height = 192,
+                        width = 192,
                         priority = "high",
                         scale = 0.5,
-                        shift = {
-                            0,
-                            -1.09375
-                        },
-                        width = 192,
+                        shift = { 0, -1.09375 },
                         x = 0,
-                        y = 0
+                        y = 0,
+                        draw_as_glow = true,
+                        draw_as_light = false,
+                        draw_as_shadow = false,
                     },
                     fadeout = true
                 }
@@ -269,11 +231,13 @@ data:extend({
         open_sound = sounds.machine_open,
         close_sound = sounds.machine_close,
         impact_category = "metal",
-        working_sound =
-        {
-            sound = { filename = "__base__/sound/assembling-machine-t2-1.ogg", volume = 0.45, audible_distance_modifier = 0.5 },
-            fade_in_ticks = 4,
-            fade_out_ticks = 20
+        working_sound = {
+            fade_in_ticks = 10,
+            fade_out_ticks = 30,
+            sound = {
+                filename = "__IndustrialRevolution3Assets1__/sound/high-tech-industrial.ogg",
+                volume = 0.5
+            }
         },
         crafting_categories = { "basic-crafting", "crafting", "advanced-crafting", "crafting-with-fluid" },
 

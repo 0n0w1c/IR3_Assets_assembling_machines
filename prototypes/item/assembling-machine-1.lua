@@ -6,7 +6,7 @@ data:extend({
         name = "assembling-machine-1",
         icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/assembler2.png",
         subgroup = "production-machine",
-        color_hint = { text = "2" },
+        color_hint = { text = "1" },
         order = "b[assembling-machine-1]",
         inventory_move_sound = item_sounds.mechanical_inventory_move,
         pick_sound = item_sounds.mechanical_inventory_pickup,

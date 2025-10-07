@@ -29,32 +29,6 @@ data:extend({
         fast_replaceable_group = "assembling-machine",
         next_upgrade = "assembling-machine-2",
         graphics_set = {
-            default_recipe_tint = {
-                primary = {
-                    a = 1,
-                    b = 0,
-                    g = 0,
-                    r = 1
-                },
-                quaternary = {
-                    a = 1,
-                    b = 0.5,
-                    g = 0.5,
-                    r = 1
-                },
-                secondary = {
-                    a = 1,
-                    b = 0,
-                    g = 0,
-                    r = 1
-                },
-                tertiary = {
-                    a = 1,
-                    b = 0,
-                    g = 0,
-                    r = 0.75
-                }
-            },
             status_colors = {
                 disabled = { a = 1, b = 0.25, g = 0.25, r = 1 },
                 full_output = { a = 1, b = 0.25, g = 0.625, r = 1 },

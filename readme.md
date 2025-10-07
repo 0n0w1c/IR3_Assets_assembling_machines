@@ -1,4 +1,4 @@
-# IR3 Assets: assembly machines
+# IR3 Assets: assembling machines
 
 *Requires the manual installation of the Industrial Revolution 3 Asset Packs!*
 

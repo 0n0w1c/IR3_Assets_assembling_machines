@@ -1,8 +1,9 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.4
-Date: 07.10.2025
+Date: 09.10.2025
   Bugfixes:
     - Removed unused default_recipe_tint for assembling machine 1
+    - Corrected assembling machine 1 remnants 
   Changes:
     - Updated readme.md with attribution
   Features:

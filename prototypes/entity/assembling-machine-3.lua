@@ -4,6 +4,19 @@ require("prototypes/entity/assembling-machine-3-pipes")
 local hit_effects = require("__base__/prototypes/entity/hit-effects")
 local sounds = require("__base__/prototypes/entity/sounds")
 
+local crafting_categories
+if mods["space-age"] then
+    crafting_categories = {
+        "basic-crafting", "crafting", "advanced-crafting",
+        "crafting-with-fluid", "electronics", "electronics-with-fluid",
+        "pressing", "metallurgy-or-assembling", "organic-or-hand-crafting",
+        "organic-or-assembling", "electronics-or-assembling",
+        "cryogenics-or-assembling", "crafting-with-fluid-or-metallurgy",
+    }
+else
+    crafting_categories = { "crafting", "basic-crafting", "advanced-crafting", "crafting-with-fluid" }
+end
+
 data:extend({
     {
         type = "assembling-machine",
@@ -239,8 +252,7 @@ data:extend({
                 volume = 0.5
             }
         },
-        crafting_categories = { "basic-crafting", "crafting", "advanced-crafting", "crafting-with-fluid" },
-
+        crafting_categories = crafting_categories,
         crafting_speed = 1.25,
         energy_source =
         {

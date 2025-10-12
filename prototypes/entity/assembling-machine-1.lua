@@ -1,6 +1,16 @@
 local hit_effects = require("__base__/prototypes/entity/hit-effects")
 local sounds = require("__base__/prototypes/entity/sounds")
 
+local crafting_categories
+if mods["space-age"] then
+    crafting_categories = {
+        "crafting", "basic-crafting", "advanced-crafting", "electronics",
+        "pressing", "organic-or-assembling"
+    }
+else
+    crafting_categories = { "crafting", "basic-crafting", "advanced-crafting" }
+end
+
 data:extend({
     {
         type = "assembling-machine",
@@ -161,8 +171,7 @@ data:extend({
                 volume = 0.5
             }
         },
-        crafting_categories = { "crafting", "basic-crafting", "advanced-crafting" },
-
+        crafting_categories = crafting_categories,
         crafting_speed = 0.5,
         energy_source =
         {

@@ -15,7 +15,7 @@ data:extend({
     {
         type = "assembling-machine",
         name = "assembling-machine-1",
-        icon = "__base__/graphics/icons/assembling-machine-2.png",
+        icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/assembler2.png",
         flags = { "placeable-neutral", "placeable-player", "player-creation" },
         minable = { mining_time = 0.2, result = "assembling-machine-1" },
         max_health = 350,

@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.7
+Date: 12.10.2025
+  Bugfixes:
+    - Vanilla icon incorrectly assigned to assembling machine 1 entity (Factoriopedia)
+  Changes:
+    - None
+  Features:
+    - None
+---------------------------------------------------------------------------------------------------
 Version: 0.0.6
 Date: 12.10.2025
   Bugfixes:

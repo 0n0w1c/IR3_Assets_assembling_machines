@@ -6,6 +6,8 @@ if not (mods["IndustrialRevolution3Assets1"]
     return
 end
 
+require("constants")
+
 require("prototypes/entity/assembling-machine-1")
 require("prototypes/item/assembling-machine-1")
 

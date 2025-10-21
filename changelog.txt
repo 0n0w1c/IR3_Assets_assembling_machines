@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 20.10.2025
+  Bugfixes:
+    - None
+  Changes:
+    - Updated the automation, automation-2, and automation-3 technology icons
+  Features:
+    - None
+---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 15.10.2025
   Bugfixes:

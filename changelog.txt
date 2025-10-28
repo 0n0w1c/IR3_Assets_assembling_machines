@@ -1,12 +1,17 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: 20.10.2025
+  Bugfixes:
+    - None
+  Changes:
+    - Added damage effects and dying explosions, updated corpse
+---------------------------------------------------------------------------------------------------
 Version: 0.1.1
 Date: 20.10.2025
   Bugfixes:
     - None
   Changes:
     - Updated the automation, automation-2, and automation-3 technology icons
-  Features:
-    - None
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 15.10.2025
@@ -14,16 +19,12 @@ Date: 15.10.2025
     - None
   Changes:
     - Refactored, doing less is better
-  Features:
-    - None
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.7
 Date: 12.10.2025
   Bugfixes:
     - Vanilla icon incorrectly assigned to assembling machine 1 entity (Factoriopedia)
   Changes:
-    - None
-  Features:
     - None
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.6
@@ -32,8 +33,6 @@ Date: 12.10.2025
     - Added Space Age crafting categories
   Changes:
     - None
-  Features:
-    - None
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.5
 Date: 10.10.2025
@@ -41,7 +40,6 @@ Date: 10.10.2025
     - None
   Changes:
     - Added base as a depedency
-  Features:
     - Added a FAQ to the mod portal
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.4
@@ -51,16 +49,12 @@ Date: 09.10.2025
     - Corrected assembling machine 1 remnants 
   Changes:
     - Updated readme.md with attribution
-  Features:
-    - None
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.3
 Date: 07.10.2025
   Bugfixes:
     - Corrected the color_hint for assembling machine 1 and 3
   Changes:
-    - None
-  Features:
     - None
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.2
@@ -69,7 +63,6 @@ Date: 07.10.2025
     - None
   Changes:
     - Minor refactoring
-  Features:
     - Updated working sounds to use IR3 sounds
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.1
@@ -77,6 +70,4 @@ Date: 07.10.2025
   Bugfixes:
     - None
   Changes:
-    - None
-  Features:
     - Initial release

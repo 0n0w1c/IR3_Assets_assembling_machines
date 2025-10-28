@@ -106,7 +106,62 @@ PIPE_COVERS = {
     }
 }
 
-PIPE_PICTURES = {
+PIPE_PICTURES_IRON = {
+    north = {
+        filename =
+        "__IndustrialRevolution3Assets1__/graphics/entities/machines/assemblers/standard-pipe-pictures-iron-north.png",
+        height = 238,
+        width = 238,
+        scale = 0.5,
+        shift = { 0, 2 },
+        priority = "high",
+    },
+
+    east  = {
+        filename =
+        "__IndustrialRevolution3Assets1__/graphics/entities/machines/assemblers/standard-pipe-pictures-iron-east.png",
+        height = 238,
+        width = 238,
+        scale = 0.5,
+        shift = { -2, 0 },
+        priority = "high",
+    },
+
+    south = {
+        layers = {
+            {
+                filename =
+                "__IndustrialRevolution3Assets1__/graphics/entities/machines/assemblers/standard-pipe-pictures-iron-south.png",
+                height = 238,
+                width = 238,
+                scale = 0.5,
+                shift = { 0, -2 },
+                priority = "high",
+            },
+            {
+                filename = "__IndustrialRevolution3Assets2__/graphics/entities/pipes/pipe-shadow-v.png",
+                height = 120,
+                width = 180,
+                scale = 0.5,
+                shift = { 0, -1 },
+                priority = "high",
+                draw_as_shadow = true,
+            }
+        }
+    },
+
+    west  = {
+        filename =
+        "__IndustrialRevolution3Assets1__/graphics/entities/machines/assemblers/standard-pipe-pictures-iron-west.png",
+        height = 238,
+        width = 238,
+        scale = 0.5,
+        shift = { 2, 0 },
+        priority = "high",
+    }
+}
+
+PIPE_PICTURES_STEEL = {
     north = {
         filename =
         "__IndustrialRevolution3Assets1__/graphics/entities/machines/assemblers/standard-pipe-pictures-steel-north.png",

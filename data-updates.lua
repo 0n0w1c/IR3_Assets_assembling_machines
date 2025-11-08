@@ -8,20 +8,40 @@ end
 
 require("constants")
 
+local recipe
+
 require("prototypes/explosion/assembling-machine-1")
 require("prototypes/entity/assembling-machine-1")
 require("prototypes/item/assembling-machine-1")
 require("prototypes/technology/automation")
+
+recipe = data.raw["recipe"]["assembling-machine-1"]
+if mods["quality"] and recipe then
+    local recycling = require("__quality__/prototypes/recycling")
+    recycling.generate_recycling_recipe(recipe)
+end
 
 require("prototypes/explosion/assembling-machine-2")
 require("prototypes/entity/assembling-machine-2")
 require("prototypes/item/assembling-machine-2")
 require("prototypes/technology/automation-2")
 
+recipe = data.raw["recipe"]["assembling-machine-2"]
+if mods["quality"] and recipe then
+    local recycling = require("__quality__/prototypes/recycling")
+    recycling.generate_recycling_recipe(recipe)
+end
+
 require("prototypes/explosion/assembling-machine-3")
 require("prototypes/entity/assembling-machine-3")
 require("prototypes/item/assembling-machine-3")
 require("prototypes/technology/automation-3")
+
+recipe = data.raw["recipe"]["assembling-machine-3"]
+if mods["quality"] and recipe then
+    local recycling = require("__quality__/prototypes/recycling")
+    recycling.generate_recycling_recipe(recipe)
+end
 
 if settings.startup["IR3-add-1x1"].value == true then
     require("prototypes/explosion/small-assembling-machine-1")
@@ -29,8 +49,20 @@ if settings.startup["IR3-add-1x1"].value == true then
     require("prototypes/item/small-assembling-machine-1")
     require("prototypes/recipe/small-assembling-machine-1")
 
+    recipe = data.raw["recipe"]["small-assembling-machine-1"]
+    if mods["quality"] and recipe then
+        local recycling = require("__quality__/prototypes/recycling")
+        recycling.generate_recycling_recipe(recipe)
+    end
+
     require("prototypes/explosion/small-assembling-machine-2")
     require("prototypes/entity/small-assembling-machine-2")
     require("prototypes/item/small-assembling-machine-2")
     require("prototypes/recipe/small-assembling-machine-2")
+
+    recipe = data.raw["recipe"]["small-assembling-machine-2"]
+    if mods["quality"] and recipe then
+        local recycling = require("__quality__/prototypes/recycling")
+        recycling.generate_recycling_recipe(recipe)
+    end
 end

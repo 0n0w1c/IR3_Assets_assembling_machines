@@ -49,6 +49,8 @@ if settings.startup["IR3-add-1x1"].value == true then
     require("prototypes/item/small-assembling-machine-1")
     require("prototypes/recipe/small-assembling-machine-1")
 
+    table.insert(data.raw["technology"]["automation"].effects, { type = "unlock-recipe", recipe = "small-assembling-machine-1" })
+
     recipe = data.raw["recipe"]["small-assembling-machine-1"]
     if mods["quality"] and recipe then
         local recycling = require("__quality__/prototypes/recycling")
@@ -59,6 +61,8 @@ if settings.startup["IR3-add-1x1"].value == true then
     require("prototypes/entity/small-assembling-machine-2")
     require("prototypes/item/small-assembling-machine-2")
     require("prototypes/recipe/small-assembling-machine-2")
+
+    table.insert(data.raw["technology"]["automation"].effects, { type = "unlock-recipe", recipe = "small-assembling-machine-2" })
 
     recipe = data.raw["recipe"]["small-assembling-machine-2"]
     if mods["quality"] and recipe then

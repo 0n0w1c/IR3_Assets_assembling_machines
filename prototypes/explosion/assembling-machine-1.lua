@@ -1,7 +1,8 @@
 data:extend({
     {
         type = "explosion",
-        name = "assembling-machine-2-explosion",
+        name = "assembling-machine-1-explosion",
+        hidden_in_factoriopedia = true,
         animations = {
             {
                 animation_speed = 0.5,
@@ -34,7 +35,7 @@ data:extend({
                         },
                         particle_name = "trailing-copper-particle",
                         probability = 1,
-                        repeat_count = 31,
+                        repeat_count = 25,
                         speed_from_center = 0.06,
                         speed_from_center_deviation = 0.03,
                         type = "create-particle"
@@ -55,49 +56,7 @@ data:extend({
                         },
                         particle_name = "trailing-glass-particle",
                         probability = 1,
-                        repeat_count = 13,
-                        speed_from_center = 0.06,
-                        speed_from_center_deviation = 0.03,
-                        type = "create-particle"
-                    },
-                    {
-                        damage_type_filters = {
-                            "fire",
-                            "impact"
-                        },
-                        frame_speed = 1,
-                        frame_speed_deviation = 0.1,
-                        initial_height = 0.5,
-                        initial_vertical_speed = 0.07,
-                        initial_vertical_speed_deviation = 0.1,
-                        offset_deviation = {
-                            { -0.34, -0.34 },
-                            { 0.34,  0.34 }
-                        },
-                        particle_name = "trailing-gold-particle",
-                        probability = 1,
-                        repeat_count = 8,
-                        speed_from_center = 0.06,
-                        speed_from_center_deviation = 0.03,
-                        type = "create-particle"
-                    },
-                    {
-                        damage_type_filters = {
-                            "fire",
-                            "impact"
-                        },
-                        frame_speed = 1,
-                        frame_speed_deviation = 0.1,
-                        initial_height = 0.5,
-                        initial_vertical_speed = 0.07,
-                        initial_vertical_speed_deviation = 0.1,
-                        offset_deviation = {
-                            { -0.34, -0.34 },
-                            { 0.34,  0.34 }
-                        },
-                        particle_name = "trailing-steel-particle",
-                        probability = 1,
-                        repeat_count = 69,
+                        repeat_count = 14,
                         speed_from_center = 0.06,
                         speed_from_center_deviation = 0.03,
                         type = "create-particle"
@@ -118,7 +77,7 @@ data:extend({
                         },
                         particle_name = "trailing-iron-particle",
                         probability = 1,
-                        repeat_count = 10,
+                        repeat_count = 90,
                         speed_from_center = 0.06,
                         speed_from_center_deviation = 0.03,
                         type = "create-particle"
@@ -129,13 +88,13 @@ data:extend({
             type = "direct"
         },
         flags = { "not-on-map" },
-        icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/assembler3.png",
+        icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/assembler2.png",
         icon_mipmaps = 4,
         icon_size = 64,
         localised_name = {
             "entity-name.ir-explosion",
             {
-                "entity-name.assembling-machine-2"
+                "entity-name.assembling-machine-1"
             }
         },
         sound = {

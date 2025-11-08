@@ -1,7 +1,8 @@
 data:extend({
     {
         type = "explosion",
-        name = "assembling-machine-3-explosion",
+        name = "assembling-machine-2-explosion",
+        hidden_in_factoriopedia = true,
         animations = {
             {
                 animation_speed = 0.5,
@@ -34,7 +35,7 @@ data:extend({
                         },
                         particle_name = "trailing-copper-particle",
                         probability = 1,
-                        repeat_count = 24,
+                        repeat_count = 31,
                         speed_from_center = 0.06,
                         speed_from_center_deviation = 0.03,
                         type = "create-particle"
@@ -55,7 +56,7 @@ data:extend({
                         },
                         particle_name = "trailing-glass-particle",
                         probability = 1,
-                        repeat_count = 9,
+                        repeat_count = 13,
                         speed_from_center = 0.06,
                         speed_from_center_deviation = 0.03,
                         type = "create-particle"
@@ -76,7 +77,7 @@ data:extend({
                         },
                         particle_name = "trailing-gold-particle",
                         probability = 1,
-                        repeat_count = 7,
+                        repeat_count = 8,
                         speed_from_center = 0.06,
                         speed_from_center_deviation = 0.03,
                         type = "create-particle"
@@ -97,7 +98,7 @@ data:extend({
                         },
                         particle_name = "trailing-steel-particle",
                         probability = 1,
-                        repeat_count = 81,
+                        repeat_count = 69,
                         speed_from_center = 0.06,
                         speed_from_center_deviation = 0.03,
                         type = "create-particle"
@@ -118,7 +119,7 @@ data:extend({
                         },
                         particle_name = "trailing-iron-particle",
                         probability = 1,
-                        repeat_count = 9,
+                        repeat_count = 10,
                         speed_from_center = 0.06,
                         speed_from_center_deviation = 0.03,
                         type = "create-particle"
@@ -129,13 +130,13 @@ data:extend({
             type = "direct"
         },
         flags = { "not-on-map" },
-        icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/laser-assembler.png",
+        icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/assembler3.png",
         icon_mipmaps = 4,
         icon_size = 64,
         localised_name = {
             "entity-name.ir-explosion",
             {
-                "entity-name.assembling-machine-3"
+                "entity-name.assembling-machine-2"
             }
         },
         sound = {

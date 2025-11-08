@@ -1,18 +1,32 @@
 data:extend({
     {
         type = "explosion",
-        name = "assembling-machine-1-explosion",
+        name = "small-assembler-1-explosion",
+        hidden_in_factoriopedia = true,
         animations = {
             {
                 animation_speed = 0.5,
                 draw_as_glow = true,
-                filename = "__base__/graphics/entity/big-explosion/big-explosion.png",
-                flags = { "always-compressed" },
-                frame_count = 47,
-                height = 245,
+                filename = "__base__/graphics/entity/explosion/explosion-1.png",
+                frame_count = 17,
+                height = 42,
                 line_length = 6,
-                shift = { 0.1875, -0.75 },
-                width = 197
+                priority = "high",
+                scale = 0.5,
+                shift = { 0.140625, 0.1875 },
+                width = 48
+            },
+            {
+                animation_speed = 0.5,
+                draw_as_glow = true,
+                filename = "__base__/graphics/entity/explosion/explosion-3.png",
+                frame_count = 17,
+                height = 88,
+                line_length = 6,
+                priority = "high",
+                scale = 0.5,
+                shift = { -0.03125, 0.046875 },
+                width = 102
             }
         },
         created_effect = {
@@ -29,14 +43,14 @@ data:extend({
                         initial_vertical_speed = 0.07,
                         initial_vertical_speed_deviation = 0.1,
                         offset_deviation = {
-                            { -0.34, -0.34 },
-                            { 0.34,  0.34 }
+                            { -0.26, -0.26 },
+                            { 0.26,  0.26 }
                         },
                         particle_name = "trailing-copper-particle",
                         probability = 1,
-                        repeat_count = 25,
-                        speed_from_center = 0.06,
-                        speed_from_center_deviation = 0.03,
+                        repeat_count = 7,
+                        speed_from_center = 0.02,
+                        speed_from_center_deviation = 0.01,
                         type = "create-particle"
                     },
                     {
@@ -50,14 +64,14 @@ data:extend({
                         initial_vertical_speed = 0.07,
                         initial_vertical_speed_deviation = 0.1,
                         offset_deviation = {
-                            { -0.34, -0.34 },
-                            { 0.34,  0.34 }
+                            { -0.26, -0.26 },
+                            { 0.26,  0.26 }
                         },
                         particle_name = "trailing-glass-particle",
                         probability = 1,
-                        repeat_count = 14,
-                        speed_from_center = 0.06,
-                        speed_from_center_deviation = 0.03,
+                        repeat_count = 5,
+                        speed_from_center = 0.02,
+                        speed_from_center_deviation = 0.01,
                         type = "create-particle"
                     },
                     {
@@ -71,14 +85,14 @@ data:extend({
                         initial_vertical_speed = 0.07,
                         initial_vertical_speed_deviation = 0.1,
                         offset_deviation = {
-                            { -0.34, -0.34 },
-                            { 0.34,  0.34 }
+                            { -0.26, -0.26 },
+                            { 0.26,  0.26 }
                         },
                         particle_name = "trailing-iron-particle",
                         probability = 1,
-                        repeat_count = 90,
-                        speed_from_center = 0.06,
-                        speed_from_center_deviation = 0.03,
+                        repeat_count = 19,
+                        speed_from_center = 0.02,
+                        speed_from_center_deviation = 0.01,
                         type = "create-particle"
                     }
                 },
@@ -87,41 +101,45 @@ data:extend({
             type = "direct"
         },
         flags = { "not-on-map" },
-        icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/assembler2.png",
+        icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/small-assembler-2.png",
         icon_mipmaps = 4,
         icon_size = 64,
         localised_name = {
             "entity-name.ir-explosion",
             {
-                "entity-name.assembling-machine-1"
+                "entity-name.small-assembler-1"
             }
         },
+        smoke = "smoke-fast",
+        smoke_count = 2,
+        smoke_slow_down_factor = 1,
         sound = {
             aggregation = {
                 max_count = 1,
                 remove = true
             },
-            audible_distance_modifier = 1.95,
-            game_controller_vibration_data = {
-                duration = 160,
-                low_frequency_vibration_intensity = 0.9,
-                play_for = "everything"
-            },
-            switch_vibration_data = {
-                filename = "__base__/sound/fight/large-explosion.bnvib",
-                gain = 0.6,
-                play_for = "everything"
-            },
             variations = {
                 {
-                    filename = "__base__/sound/fight/large-explosion-1.ogg",
-                    volume = 1
+                    filename = "__base__/sound/small-explosion-1.ogg",
+                    volume = 0.5
                 },
                 {
-                    filename = "__base__/sound/fight/large-explosion-2.ogg",
-                    volume = 1
+                    filename = "__base__/sound/small-explosion-2.ogg",
+                    volume = 0.5
+                },
+                {
+                    filename = "__base__/sound/small-explosion-3.ogg",
+                    volume = 0.5
+                },
+                {
+                    filename = "__base__/sound/small-explosion-4.ogg",
+                    volume = 0.5
+                },
+                {
+                    filename = "__base__/sound/small-explosion-5.ogg",
+                    volume = 0.5
                 }
             }
         }
-        }
+    }
 })

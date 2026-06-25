@@ -9,7 +9,6 @@ data:extend({
         icons = {
             {
                 icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/small-assembler-2.png",
-                icon_mipmaps = 4,
                 icon_size = 64
             }
         }

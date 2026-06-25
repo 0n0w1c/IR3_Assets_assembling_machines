@@ -1,12 +1,12 @@
 {
     "name": "IR3_Assets_assembling_machines",
-    "version": "0.2.5",
+    "version": "0.3.0",
     "title": "IR3 Assets: assembly machines",
     "author": "0n0w1c",
     "description": "Reskins the assembling machines using IR3 graphical assets, if installed.\nRequires the manual installation of the Industrial Revolution 3 Asset Packs.",
-    "factorio_version": "2.0",
+    "factorio_version": "2.1",
     "dependencies": [
-        "base >= 2.0",
-        "IR3_Assets_some_assembly_required >= 0.1.2"
+        "base >= 2.1",
+        "IR3_Assets_some_assembly_required >= 0.2.0"
     ]
 }

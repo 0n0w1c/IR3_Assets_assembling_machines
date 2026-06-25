@@ -75,7 +75,7 @@ entity.graphics_set = {
         }
     }
 }
-entity.crafting_categories = { "basic-crafting", "crafting" }
+entity.crafting_categories = { "crafting" }
 entity.collision_box = {
     { -0.4, -0.4 },
     { 0.4,  0.4 }
